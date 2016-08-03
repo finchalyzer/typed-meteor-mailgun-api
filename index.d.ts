@@ -6,7 +6,7 @@ interface Mailgun {
     send(emailObject:{
       to:string,
       cc?: string,
-      bcc?: string
+      bcc?: string,
       from?: string,
       html?: string,
       text?: string,
@@ -15,7 +15,7 @@ interface Mailgun {
       options?:{},
       testmode?:string,
       saveEmailTo?: string
-   }): void;
+   }): void
 
    getEvents(filter:{
       filter:{},
@@ -28,10 +28,11 @@ interface Mailgun {
    handleEvents(filter:{
       eventHandlers:{}
    })
+
 }
 
 interface MailgunApi {
-    new(name: {apiKey: string, domain: string}): Mailgun;
+    new(name: {apiKey: string, domain: string}): Mailgun
 }
 
-declare var Mailgun: MailgunApi;
+declare var Mailgun: MailgunApi
