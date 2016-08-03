@@ -1,0 +1,7 @@
+{
+  "name": "meteor-mailgun-api",
+  "main": "index.d.ts",
+  "homepage": "https://github.com/gfk-ba/meteor-mailgun-api",
+  "global": true,
+  "version": "0.5.0"
+}
